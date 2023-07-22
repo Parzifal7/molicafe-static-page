@@ -1,0 +1,306 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* inicio del cuerpo */
+
+.content-body{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 400px;
+    background-color: azure;
+    
+
+}
+
+
+
+/* inicio del slider */
+.content-slider {
+    margin: auto;
+    width: 75%;
+    height: 500px;
+    position: relative;
+    margin-top: 85px;
+    overflow: hidden;
+    margin-bottom: 5px;
+
+}
+.img-slider {
+    display: flex;
+    width: 400%;
+    height: 80%;
+
+
+    animation: cambio 16s infinite;
+}
+.slider1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/slider1.jpeg);
+    background-position: center;
+    background-size: 100% 100%;
+
+
+}
+
+.slider2 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/slider2.jpeg);
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.slider3 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/slider3.jpeg);
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.slider4 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/slider4.jpeg);
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+@keyframes cambio
+{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+
+}
+
+
+/* fin del slider */
+
+/* empieza lema */
+
+
+.content-lema{
+    position: relative;
+    margin: auto;
+    width: 40%;
+    height: 50px;
+    margin-top: 20px;
+    *background: rgb(108, 255, 108);
+    margin-bottom: 5px;
+    z-index: 1;
+}
+
+
+.lema{
+    font-family: castellar;
+}
+
+
+/* fin del lema */
+
+
+
+/* fin del cuerpo */
+
+
+
+                                 /* Aqui empieza la pagina de nosotros*/
+
+/* inicio del cuerpo */
+
+.content-body2{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 550px;
+    background-color: azure;
+    display: flex;
+    
+
+}
+
+.img-body{
+    position: relative;
+    margin: auto;
+    width: 50%;
+    height: 550px;
+    background-image: url(../img/imagennosotros.jpeg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+
+}
+
+.history-body{
+    position: relative;
+    margin: auto;
+    width: 50%;
+    height: 550px;
+    *background-color: yellow;
+    
+
+}
+
+
+
+
+
+
+/* fin del cuerpo */
+/* fin del cuerpo */
+/* fin del cuerpo */
+/* fin del cuerpo */
+
+
+
+
+
+                                /* Aqui empieza la pagina de productos*/
+
+/* inicio del cuerpo */
+
+.content-body3{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 550px;
+    background-color: azure;
+}
+
+
+
+
+
+
+
+
+/*aqui empiezan los estilos de las cards */
+
+.content-card {
+    max-width: 1200px; /*este es para aplicar el ancho maximo del contenedor */
+    margin: auto; /*este es para aplicar el margen del contenedor */
+    *background: rgb(202, 100, 100);/* este es para asignar un color de fondo */
+    margin-top: 20px; /* este es para asignarle la margen en la parte de rriba */
+    perspective: 1000px; 
+    display: flex; /*este es para que los contenedores se organicen de forma horizontal */
+    justify-content: center; /* este es para centrar de forma vertical */
+    align-items: center; /* este es para que se centre de forma horizontal */
+    *flex-wrap: wrap; /* este es para que cuando la pagina sea haga mas pequeña se organice en filas */
+    
+}
+
+.card-flip {
+    margin: 10px;
+    perspective: 1000px;
+}
+
+.card-flip:hover .card {
+       transform: rotateY(180deg);
+    
+}
+
+.card {
+    width: 250px;
+    height: 400px;
+    *background: goldenrod;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 600ms;
+    
+}
+
+.card-delantera,
+.card-atras {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+  
+}
+
+.card-delantera {
+    background-size: cover;
+    background-position: center;
+
+}
+
+.card-atras {
+    transform: rotateY(180deg);
+    background: white;
+   
+    
+}
+
+.contenido-card-delantera {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transform: translateZ(65px);
+}
+
+.contenido-card-atras {
+    padding: 20px;
+    text-align: center;
+    transform: translateZ(65px);
+}
+
+.contenido-card-atras p {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.contenido-card-atras input {
+    padding: 10px 15px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    color: black;
+    background: greenyellow;
+    box-shadow: 1px 1px 20px -10px black;
+    border-radius: 10px;
+
+
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+/* fin del cuerpo */

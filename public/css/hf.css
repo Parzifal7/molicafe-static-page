@@ -1,0 +1,150 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* inicio del encabezado*/
+
+header {
+    
+    position: fixed;/*esta es para que barra del menu que fija*/
+    top: 0; /*este es margen que tiene el header en la parte de arriba*/
+    left: 0; /*este es para el margen izquierdo del header*/
+    width: 100%;
+    height: 80px;
+    background: rgb(17, 87, 76);
+    box-shadow: 0 4px 25px -22px black; /*el 0 es para que no se vea a los lados- 4px es para que se vea hacia bajo - 25px es el tamaño del desvanecido - -22px es el tamaño de la sombra - black es el color*/
+    z-index: 2; /*para que el header se posicione por encima de todo*/
+}
+
+.content-header {
+    width: 80%;
+    margin: auto;
+    display: flex; /*para utilizar flex*/
+    justify-content: space-between; /*para colocar los contenidos en cada estremo*/
+
+}
+
+.titulo {
+    height: 80px;
+    display: flex; /*para utilizar flex*/ /*este trabaja en conjunto con las dos lineas siguientes*/
+    justify-content: flex-start; /*para centrar de forma horizontal*/
+    align-items: center; /*para centrar de forma vertical*/ 
+    color: white;
+
+}
+
+.menu {
+    height: 80px; /*este es el alto total del header */
+}
+
+.menu nav{
+    height: 100%; /*este ocupa el 100% de alto de su contenedor padre que es el menu */
+}
+
+.menu nav ul {
+    height: 100%; /*este ocupa el 100% de alto de su contenedor padre que es el nav*/
+    display: flex; /*para que se posicione un al lado de otra de forma horizontal*/
+    list-style: none; /*es para quitarle los puntos al menu*/
+
+}
+
+.menu nav ul li {
+    height: 100%; /*para que ocupe el 100% del padre que es el espacio del ul*/
+    margin: 0 20px; /*el 0 es para que no tenga margen en la parte de arriba y el 20px es para que tenga margenes a los lados*/
+    display: flex; /*para utilizar flex*/ /*este trabaja en conjunto con las dos lineas siguientes*/
+    justify-content: center; /*para centrar de forma horizontal*/
+    align-items: center; /*para centrar de forma vertical*/ 
+    position: relative;
+    
+    
+}
+
+a{
+    color:burlywood;
+}
+
+
+
+/* fin de encabezado */
+
+
+/*logo Header*/
+.loguito{
+    width: 9%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+
+
+
+/* inicio del footer */
+.content-footer {
+    position: relative;
+    width: 100%;
+    height: 110px;
+    margin-bottom: 0;
+    background: black;
+    background-image: url(../img/logofooter4.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 0;
+    
+    
+
+}
+
+.logo-footer {
+    width: 80%;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+}
+
+
+.logo-footer h1 {
+    color: white;
+}
+
+.sub-content {
+    width: 80%;
+    height: 10%;
+    margin: auto;
+    display: flex;
+    
+}
+
+.correo-footer {
+    width: 35%;
+    color: white;
+}
+
+.redes-footer{
+    width: 30%;
+    height: 10%;
+    text-align: center;
+   
+    
+}
+
+.redes-footer img {
+    height: 30px;
+    border-radius: 50%;
+}
+
+.telefono-footer {
+    width: 35%;
+    text-align: right;
+    color: white;
+}
+
+
+/* fin del footer */
